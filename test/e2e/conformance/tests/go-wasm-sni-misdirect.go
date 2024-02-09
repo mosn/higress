@@ -101,7 +101,7 @@ var WasmPluginsSniMisdirect = suite.ConformanceTest{
 						Host:     "foo.com",
 						Path:     "/foo",
 						Headers: map[string]string{
-							"Content-Type": "plain/text",
+							"Content-Type": "text/plain",
 						},
 						TLSConfig: &http.TLSConfig{
 							SNI: "foo.com",
@@ -133,7 +133,7 @@ var WasmPluginsSniMisdirect = suite.ConformanceTest{
 						Host:     "bar.com",
 						Path:     "/foo",
 						Headers: map[string]string{
-							"Content-Type": "plain/text",
+							"Content-Type": "text/plain",
 						},
 						TLSConfig: &http.TLSConfig{
 							SNI: "foo.com",
